@@ -1,0 +1,221 @@
+.skills-container{
+    height: fit-content;
+    z-index: 3;
+    padding: 50px;         
+    color:rgb( 5,51,64)!important;
+}
+.skill-title{
+   color:rgb(31,60,55)!important; 
+   font-weight: 600;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+.underline{
+  width: 100px;
+  height: 3px;
+  background:#fca61f;
+}
+.skills{    
+    background-color:rgb(194,222,217);
+    z-index: 100;
+}
+.sk-left{
+    float: left;    
+    position: relative;
+    width: 20%;    
+    background-color:rgb(194,222,217);
+}
+.sk-left :nth-child(1){
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.sk-left div:nth-child(n){
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex: 1;
+    margin-top: 6px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.sk-left div:nth-child(n)>img{
+    min-width: 30px;
+    min-height: 30px;
+    flex: 0.1;
+}
+.sk-left div:nth-child(n)>span{
+    flex: 1;
+    margin-top: 3px;
+    display: flex;
+    align-items: flex-start;
+}
+.s-right{
+    width: 80%;
+    gap: 30px;
+    padding: 10px 20px;
+    float: right;
+    display: flex;
+}
+.front-end{
+    flex: 1;
+}
+.back-end{
+    flex: 1;
+}
+.s-right>div:nth-child(n)>span:nth-child(n){
+    color:rgb(31,60,55)!important; 
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    width: 10%;
+}
+.s-right>div:nth-child(n){
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+.language{
+    display: flex;
+    justify-content: space-between;
+}
+.knowldge{
+    margin-top: 20px;
+    background-color:rgb(9,103,128)!important;
+    height: 3px;
+    width: 100%;
+}    
+.htcs{
+    width: 80%;
+}
+.js{
+    width: 75%;
+}
+.react{
+    width: 70%;
+}
+.node{
+    width: 30%;
+}
+.firebase{
+    width: 10%;
+}
+.sql{
+    width:20%;
+}
+.s-right .background{
+    background: rgb(255, 237, 211);
+    height: 3px;
+    width: 100%;
+    bottom: 3px;
+    z-index: -1;
+    position: relative;
+    left: 0px;
+    top: -3px;
+}
+
+@media screen and (min-width:300px) and (max-width:430px){
+    .skills-container{
+        margin:0px;
+        height: fit-content;
+    }
+    .skills-container .title{
+        font-size:55px!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        background: none!important;
+        justify-content: center;
+        align-items: center;
+    }
+    .sk-left{
+        width: 90%!important;
+        font-size: 55px!important;
+        line-height: 3rem;
+        display: flex;
+        flex-direction: column;  
+        gap:30px;
+    }
+    .l-title{
+        margin-top: 10px;
+        font-size: 45px!important; 
+    }
+    .sk-left :nth-child(n){
+        font-size:35px!important; 
+    }
+    .s-right{
+        flex-direction: column;
+        margin-top: 40px; 
+        width: 100%;
+    }
+    .s-right>div:nth-child(n)>span:nth-child(n){
+        font-size: 40px!important;
+        width: 100%;
+        padding:20px 0;
+        margin-right: 20px;
+    }
+    .s-right>div:nth-child(n){
+        gap: 40px;
+    }
+    .language{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width:431px) and (max-width: 768px){
+    .skills-container{
+        height: fit-content;
+        width:100%;
+    }
+    .sk-left{
+        width: 24%;    
+    }
+    .sk-left :nth-child(1){
+        font-size: 33px;
+    }
+    .sk-left div:nth-child(n)>span{
+        font-size: 18px;
+    }
+    .s-right{
+        width: 75%;
+        gap: 20px;
+        padding: 10px 30px 0px 0px;  
+    }
+    .s-right>div:nth-child(n)>span:nth-child(n){
+        font-size: 23px
+    }
+    .s-right>div:nth-child(n){
+        font-size: 19px;
+    } 
+}
+@media screen and (min-width:769px) and (max-width: 1025px){
+    .skill-title{
+        font-size: 33px;
+    }
+    .sk-left{
+        width: 25%;    
+    }
+    .l-title{
+        font-size: 24px!important;
+    }
+    .sk-left div:nth-child(n)>span{
+        font-size: 19px;
+    }
+     .s-right{
+        width: 73%;
+        padding: 10px 30px 0px 10px ;  
+    }
+
+    .s-right>div:nth-child(n)>span:nth-child(n){
+        font-size: 22px
+    }
+    .s-right>div:nth-child(n){
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,309 @@
+.services-container{
+    height:fit-content;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+.service-title{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin: 0 auto;
+}
+
+.services{
+    width: 100%;    
+    margin: 20px 0 40px 0;
+    padding: 20px 70px;
+    background-color:rgb(166, 197, 191);    
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto;   
+    border-radius: 20px; 
+}
+.card{
+    width: 290px;
+    min-height: 310px;
+    max-height: 380px;
+    cursor: pointer;
+    background: white;
+    border-radius: 25px !important;
+    position: relative;
+    display: inline-block;
+    margin: 0px 0 20px 0;
+    padding-top: 5px; 
+}
+
+.image-content{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 0;
+    position: relative;
+    border-radius:25px 25px 0 25px;
+    background-color: #416bdf;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;  
+    height: 40px;
+    border-radius:25px 25px 0 25px;
+    border: none !important;
+}
+
+.overlay::before,
+.overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 39px;
+    height: 40px;
+    background: #416bdf;
+    border: none !important;
+    border:transparent;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background: white;
+    border: none;
+    }
+.card-image{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid gainsboro;
+    background: white;
+}
+.card-image:hover{
+    transform: rotate(-5deg);
+    border: 3px solid #6f34fe;
+    transition: 1s ease-in-out;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit:scale-down;
+    border-radius: 50%;
+    border: 2px solid #4070f4;
+}
+.card>span{
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 8px;
+    z-index: 5;
+}
+.name{
+  margin-top: 19px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;  
+}
+.description{
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.6rem;
+} 
+._box{
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0 85px 0 #e9eefc;
+    border-radius:20px;
+    transition: 3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.swiper-slide {
+  margin-bottom: 30px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right:10px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+    --swiper-navigation-size: 28px;
+    position: absolute;
+    top: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0 ease;
+}
+.swiper-button-next,
+.swiper-button-prev:hover{
+    color: #4070f4;
+}
+@media only screen and (min-width:300px) and (max-width:430px){
+    .services-container{
+        margin: 0;
+        padding: 0;
+        width:96%;
+        margin-top: 40px;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+    .service-title{
+        font-size: 60px;
+    }
+   .service-title .move{
+        font-size: 45px!important;
+    }
+    .services{
+        grid-gap: 40px 30px;
+        grid-template-columns: repeat(1, 2fr);
+        height: fit-content;
+        display: grid;
+        place-items: center;
+        margin: 20px 0 40px 0;
+         padding: 20px 50px;
+         margin-left: 60px;
+    }
+    .card{
+        width:100%;
+        min-height: 550px;
+        max-height: 500px; 
+        line-height: 4rem;
+    }
+    .card-image{
+        width: 7.5rem!important;
+        height: 7.5rem!important;       
+    }
+    .name{
+        font-size:45px!important;
+        margin: 35px 0;
+        font-weight: 200!important;
+        opacity: 0.8!important;
+        line-height: 2rem!important;
+    }
+    .description, .display-8 {
+        font-size: 35px!important;
+        line-height: 4rem !important;
+    }
+}
+/* @media only screen and (min-width:30px) and (max-width:430px){
+    .services-container{
+        margin: 0;
+        padding: 0;
+        width:96%;
+        margin-top: 40px;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+    .service-title{
+        font-size: 60px;
+    }
+   .service-title .move{
+        font-size: 45px!important;
+    }
+    .services{
+        grid-gap: 40px 30px;
+        grid-template-columns: repeat(1, 2fr);
+        height: fit-content;
+        display: grid;
+        place-items: center;
+        margin: 20px 0 40px 0;
+         padding: 20px 50px;
+         margin-left: 60px;
+    }
+    .card{
+        width:100%;
+        min-height: 550px;
+        max-height: 500px; 
+        line-height: 4rem;
+    }
+    .card-image{
+        width: 7.5rem!important;
+        height: 7.5rem!important;       
+    }
+    .name{
+        font-size:45px!important;
+        margin: 35px 0;
+        font-weight: 200!important;
+        opacity: 0.8!important;
+        line-height: 2rem!important;
+    }
+    .description, .display-8 {
+        font-size: 35px!important;
+        line-height: 4rem !important;
+    }
+}  */
+@media only screen and (min-width:431px) and (max-width: 768px){
+    .services-container{
+        margin-top: 40px;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+    .services{
+        grid-gap: 40px 30px;
+        grid-template-columns: repeat(2, 2fr);
+        display: grid;
+        place-items: center;
+    }
+    .card{
+        width:400px;
+        min-height: 410px;
+    }
+    .name{
+        padding-top: 20px;
+        font-size:25px;        
+        line-height: 2rem!important;
+    }
+    .description, .display-8 {
+        font-size: 21px;
+        line-height: 1.7em !important;
+    }    
+}
+@media screen and (min-width:769px) and (max-width: 1025px){
+    .service-title{
+        font-size: 37px;
+        padding-bottom: 0;
+        margin:  0;
+    }
+    .service-title .sub-heading{
+        font-size: 22px!important;
+    }
+    .services{
+        grid-gap: 30px 20px;
+        grid-template-columns: repeat(3, 2fr);
+        padding-left: 15px;
+        padding-top: 50px;
+    }
+    .card{
+        width:320px;
+        min-height: 430px;
+    }
+    .name{
+        font-size:25px;        
+    }
+    .description, .display-8 {
+        font-size: 20px;
+        line-height: 1.7em !important;
+    }
+
+}

@@ -1,0 +1,95 @@
+.sidebar{
+    position: fixed;
+    height: auto !important;
+    height: 100%; 
+    color: white !important;
+    height: 100vh;
+    position: relative;
+    transition:"0.5s ease";
+}
+.bars{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    position: sticky;
+    padding: 10px;
+    left: 100px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.n-list{
+    padding-top: 100px;
+    color: aliceblue;
+    padding-right: 15px;
+}
+.link{
+    display: flex;
+    gap: 25px;
+    font-size: 17px; 
+    color:white;
+    padding:20px 0;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+}
+.link:nth-of-type(n):hover{
+    color: lightblue;
+    transition: all 1s ease;
+}
+.link div:nth-of-type(n - 1):hover{
+    color: lightblue;
+    transition: all 0s ease;
+}
+
+@media screen and (min-width:430px) and (max-width: 768px) {
+    .sidebar{
+        position: relative;
+        height: auto;
+        width: 50%;
+        color: inherit;
+        height: auto;
+        transition: none;
+    }
+    .bars{
+        display: none;
+    }
+    .n-list{
+        position: relative;
+        top: 0;
+        left: 0;
+        color: inherit;
+        padding: 30px;
+    }
+    .link{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        color: inherit;
+        padding-bottom:50px;
+        width: auto;
+        text-decoration: none;
+    }
+    .link:nth-of-type(n):hover{
+        color: inherit;
+        transition: none;
+    }
+    .link div:nth-of-type(n - 1):hover{
+        color: inherit;
+        transition: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1025px) {
+    .sidebar{
+        height: 100%;
+    }
+    .n-list{
+        top: 30;
+        padding: 20px;
+    }
+    .link{
+        gap: 20px;
+        font-size: 23px;
+        padding-bottom:50px;
+    }
+  }
