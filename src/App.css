@@ -103,4 +103,9 @@ line-height: 1.5715;
   background:#fca61f;
   margin: 20px auto;
 }
-  
+
+@media screen and (max-width:1000px){
+body{
+    max-width: 95%;
+  }
+}
